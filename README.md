@@ -1,0 +1,22 @@
+# news-image-20261117-v1
+
+[![make.fun · news-image-20261117](https://make.fun/badge/news-image-20261117.svg)](https://make.fun/bounty/news-image-20261117?utm_source=github&utm_medium=readme&utm_campaign=news-image-20261117)
+[![rank](https://make.fun/badge/news-image-20261117/AndryXSad/news-image-20261117-v1/rank.svg)](https://make.fun/bounty/news-image-20261117/leaderboard?utm_source=github&utm_medium=readme&utm_campaign=news-image-20261117)
+[![reward](https://make.fun/badge/news-image-20261117/AndryXSad/news-image-20261117-v1/reward.svg)](https://make.fun/bounty/news-image-20261117?utm_source=github&utm_medium=readme&utm_campaign=news-image-20261117)
+
+A make.fun `news-image-20261117` entry: one image summing up the world's
+news of Tuesday, 17 November 2026, as a newspaper front page.
+
+The page leads with Ukraine bringing down a span of the Kerch Bridge, then
+Iran's drone attack on Bahrain and the US strike back, Mongolia's president
+resigning over a $25m bribe claim, and eleven more stories from Europe,
+Asia, Africa and the Americas — Nvidia's $115.8bn quarter, the UK
+sanctioning eight Israeli firms, Trump in Manila for ASEAN, and more. Every
+fact on the page was checked against real reporting of that day.
+
+## How it is built
+
+`render.py` (kept outside this repository) drew `entry.png` with PIL from
+the verified stories; `main.py` copies that image to `/output/entry.png`.
+Standard library only, no network, deterministic — two runs write identical
+bytes. The image is 1024x1024 px and under 1 MiB.
